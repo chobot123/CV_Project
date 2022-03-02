@@ -1,0 +1,13 @@
+.userHeader {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    padding: 10px;
+}
+
+.input {
+    border: 0;
+    outline: 0;
+}
