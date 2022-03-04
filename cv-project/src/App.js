@@ -1,6 +1,6 @@
 import React from "react";
 import UserInfo from "./components/user-info/UserInfo";
-import './styles/main.css'
+import './styles/app.css'
 import './styles/normalize.css'
 
 const App = () => {

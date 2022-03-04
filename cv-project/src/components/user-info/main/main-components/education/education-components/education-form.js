@@ -6,22 +6,14 @@ const EduForm = (props) => {
 
     return (
         <>
-            {eduList.map((edu) => {
+            {eduList.map((edu, index) => {
                 return (
                     <li key={edu.id}>
                         <form className="edu">
-                        
-                            <input
-                                placeholder="School"
-                                onChange={props.handleChange}
-                                value={edu.school}
-                                type="text" 
-                                id="school"
-                            />
-                            
+
                             <input 
                                 placeholder="date-begin"
-                                onChange={props.handleChange}
+                                onChange={(e) => props.handleChange(index, e)}
                                 value={edu.year.begin}
                                 type="date" 
                                 id="begin"
@@ -29,15 +21,24 @@ const EduForm = (props) => {
                             
                             <input 
                                 placeholder="date-end"
-                                onChange={props.handleChange}
+                                onChange={(e) => props.handleChange(index, e)}
                                 value={edu.year.end}
                                 type="date" 
                                 id="end"
                             />
+                        
+                            <input
+                                placeholder="School"
+                                onChange={(e) => props.handleChange(index, e)}
+                                value={edu.school}
+                                type="text" 
+                                id="school"
+                            />
+                            
                             
                             <input 
                                 placeholder="major"
-                                onChange={props.handleChange}
+                                onChange={(e) => props.handleChange(index, e)}
                                 value={edu.major}
                                 type="text" 
                                 id="major"
@@ -45,12 +46,14 @@ const EduForm = (props) => {
                             
                             <input 
                                 placeholder="degree"
-                                onChange={props.handleChange}
+                                onChange={(e) => props.handleChange(index, e)}
                                 value={edu.degree}
                                 type="text" 
                                 id="degree"
                             />
+
                             <button onClick={() => props.deleteEdu(edu.id)}>Delete</button>
+
                         </form>
                     </li>
                 )
