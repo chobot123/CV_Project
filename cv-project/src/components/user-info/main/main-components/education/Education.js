@@ -20,7 +20,7 @@ class Education extends Component {
                 id : uniqid(),
             },
             eduList : [],
-        }
+        };
 
         this.handleChange = this.handleChange.bind(this);
         this.onSubmitEdu = this.onSubmitEdu.bind(this);
@@ -70,9 +70,9 @@ class Education extends Component {
 
     deleteEdu = (id) => {
 
-        this.setState(({
+        this.setState({
             eduList : this.state.eduList.filter((edu) => edu.id !== id),
-        }), () => console.log(this.state))
+        })
 
     }
 
