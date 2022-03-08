@@ -1,0 +1,24 @@
+.user-info {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+}
+
+/* .userHeader {
+    border-left: 0.2em solid black;
+    border-bottom: 0.2em solid black;
+} */
+
+#name {
+    font-size: 2.5em;
+}
+
+#title {
+    font-size: 1.5em;
+}
+
+#name,
+#title {
+    text-align: center;
+    box-sizing: border-box;
+}

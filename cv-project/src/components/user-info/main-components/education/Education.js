@@ -1,7 +1,7 @@
 import React, {Component} from "react";
 import uniqid from "uniqid";
-import EduForm from "./education-components/education-form";
-import '../../../../../styles/component-styles/education.css'
+import EduForm from "./edu-form-component";
+import '../../../../styles/component-styles/education.css'
 
 
 class Education extends Component {

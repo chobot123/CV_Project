@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import ExpForm from "./experience-components/experience-component";
+import ExpForm from "./exp-form-component";
 import uniqid from "uniqid";
 
 class Experience extends Component {

@@ -1,5 +1,5 @@
 import React from "react";
-import DescriptionForm from "./description-component";
+import DescriptionForm from "./form-desc-component";
 
 const ExpForm = (props) => {
     

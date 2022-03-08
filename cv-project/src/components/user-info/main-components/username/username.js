@@ -41,7 +41,7 @@ class Username extends Component {
         const {user} = this.state;
 
         return (
-            <div>
+            <div className="username">
                 <form className = "userHeader">
                     <input
                          onChange = {this.handleName}

@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import uniqid from "uniqid";
-import SkillForm from "./skills-components/skill-component";
+import SkillForm from "./skill-form-component";
 
 class Skills extends Component {
     constructor() {
