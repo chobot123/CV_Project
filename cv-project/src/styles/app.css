@@ -3,6 +3,8 @@
     flex-direction: column;
     min-height: inherit;
     gap: 1em;
+    justify-content: center;
+    align-items: center;
 }
 
 .title-wrapper {
@@ -10,6 +12,7 @@
     text-align: center;
     background-color: black;
     color: white;
+    align-self: stretch;
 }
 
 #page-title {
@@ -19,6 +22,19 @@
 .content {
     display: flex;
     flex: 1 1 auto;
-    border: 0.2em solid black;
-    margin: 0em 8em;
+    width: 800px;
+}
+
+.input,
+textarea{
+    border: 0;
+    outline: 0;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+textarea {
+    font-size: 15px;
+    font-style: italic;
+    font-weight: lighter;
 }

@@ -1,18 +1,16 @@
 import React from "react";
-import Username from "./main-components/username/username";
 import Education from "./main-components/education/Education";
 import Experience from "./main-components/experience/Experience";
-import Skills from "./main-components/skills/Skills";
 import "../../styles/user-info.css"
+import Description from "./main-components/description/Description";
 
 
 const UserInfo = () => {
     return (
         <div className="user-info">
-            <Username />
+            <Description />
             <Education />
             <Experience />
-            <Skills />
         </div>
     );
 };

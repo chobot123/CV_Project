@@ -1,13 +1,7 @@
-.userHeader {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 5px;
-    padding: 10px;
+.user-header>*{
+    text-align: left;
 }
 
-/* .input {
-    border: 0;
-    outline: 0;
-} */
+.userHeader>#title.input {
+    font-size: 1.25em;
+}

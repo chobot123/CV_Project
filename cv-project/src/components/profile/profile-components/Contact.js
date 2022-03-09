@@ -28,35 +28,48 @@ class Contact extends Component {
         const {info} = this.state;
         return (
             <div className="contact-info">
+                <h3 id="header">Contact Info</h3>
                 <form className="contact-form">
-                    <input 
+                    <label>
+                        Phone Number
+                        <input 
                         onChange={this.handleChange}
                         input="number"
                         value={info.phoneNumber}
                         id="phoneNumber"
                         placeholder="Phone Number"
-                    />
-                    <input 
-                        onChange={this.handleChange}
-                        input="email"
-                        value={info.email}
-                        id="email"
-                        placeholder="Email"
-                    />
-                    <input 
-                        onChange={this.handleChange}
-                        input="text"
-                        value={info.linkedIn}
-                        id="linkedIn"
-                        placeholder="Linked In"
-                    />
-                    <input 
-                        onChange={this.handleChange}
-                        input="text"
-                        value={info.website}
-                        id="website"
-                        placeholder="Website"
-                    />
+                        />
+                    </label>
+                    <label>
+                        Email
+                        <input 
+                            onChange={this.handleChange}
+                            input="email"
+                            value={info.email}
+                            id="email"
+                            placeholder="Email"
+                        />
+                    </label>
+                    <label>
+                        LinkedIn
+                        <input 
+                            onChange={this.handleChange}
+                            input="text"
+                            value={info.linkedIn}
+                            id="linkedIn"
+                            placeholder="Linked In"
+                        />
+                    </label>
+                    <label>
+                        Website
+                        <input 
+                            onChange={this.handleChange}
+                            input="text"
+                            value={info.website}
+                            id="website"
+                            placeholder="Website"
+                        />
+                    </label>
                 </form>
             </div>
         )

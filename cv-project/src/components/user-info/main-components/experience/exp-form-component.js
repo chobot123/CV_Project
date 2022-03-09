@@ -1,10 +1,10 @@
 import React from "react";
-import DescriptionForm from "./form-desc-component";
+
 
 const ExpForm = (props) => {
     
     const {jobList} = props;
-    console.log(props);
+
 
     return (
         <>
@@ -49,13 +49,9 @@ const ExpForm = (props) => {
                                 id="end"
                             />
                             
-                            <div className="desc-container">
-                                <DescriptionForm descList = {job.descList} 
-                                                 formChange = {props.formChange}
-                                />
-                            </div>
+                            {props.description}
                         </form>
-                        <button onClick={() => props.deleteExp(index)}>
+                        <button onClick={() => props.deleteExp(job.id)}>
                             Delete
                         </button>
                     </li>

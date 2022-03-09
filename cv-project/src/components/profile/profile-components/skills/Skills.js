@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import uniqid from "uniqid";
 import SkillForm from "./skill-form-component";
+import "../../../../styles/component-styles/skills.css"
 
 class Skills extends Component {
     constructor() {
@@ -50,6 +51,7 @@ class Skills extends Component {
 
         return (
             <div className="skills">
+                <h3 id="header">Skills</h3>
                 <SkillForm skillList = {skillList}
                            onChange = {this.onChange}
                 />

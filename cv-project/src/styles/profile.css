@@ -1,5 +1,14 @@
 .profile {
     display: flex;
     flex-direction: column;
+    flex: 0 1;
+    border-top: 0.2em solid black;
+    border-left: 0.2em solid black;
+    border-bottom: 0.2em solid black;
+    padding: 10px 10px;
 }
 
+.profile>* {
+    box-sizing: border-box;
+    width: 100%;
+}

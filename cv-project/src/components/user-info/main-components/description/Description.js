@@ -28,7 +28,7 @@ class Description extends Component {
                 <textarea 
                     onChange={this.handleChange}
                     value={description}
-                    rows={5}
+                    rows={4}
                     placeholder="Describe yourself!..."
                 />
             </div>

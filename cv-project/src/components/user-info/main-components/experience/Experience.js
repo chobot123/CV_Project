@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import ExpForm from "./exp-form-component";
 import uniqid from "uniqid";
+import DescriptionForm from "./form-desc-component";
 
 class Experience extends Component {
     constructor() {
@@ -87,19 +88,22 @@ class Experience extends Component {
             job : {
                 ...prevState.job,
                 id : uniqid(),
+                descList : this.state.job.descList.concat(this.state.job.description),
             }
         }))
     }
 
     deleteExp = (id) => {
-        this.setState({
+        console.log(id);
+        this.setState(({
             jobList : this.state.jobList.filter((job) => job.id !== id)
-        })
+        }), () => console.log(this.state))
     }
 
     render() {
 
         const {jobList} = this.state;
+        const {job} = this.state;
 
         return (
             <div className="experience">
@@ -107,6 +111,11 @@ class Experience extends Component {
                          handleChange = {this.handleChange}
                          deleteExp = {this.deleteExp}
                          formChange = {this.formChange}
+                         description={
+                                <DescriptionForm descList = {job.descList} 
+                                                 formChange = {this.formChange}
+                                />
+                         }
                          />
                 <button id="add" onClick={this.onSubmitExp}>
                     Add Experience+

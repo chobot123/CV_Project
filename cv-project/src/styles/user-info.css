@@ -2,6 +2,26 @@
     display: flex;
     flex-direction: column;
     flex: 1 1 auto;
+    justify-content: center;
+    align-items: stretch;
+    border: 0.2em solid black;
+    min-width: 0;
+}
+
+.profile-description {
+    padding: 1em;
+}
+
+.profile-description>* {
+    resize: none;
+}
+
+.education,
+.experience {
+    display: flex;
+    flex: 1 1 100%;
+    flex-direction: column;
+    align-items: center;
 }
 
 /* .userHeader {
@@ -13,12 +33,13 @@
     font-size: 2.5em;
 }
 
-#title {
-    font-size: 1.5em;
-}
-
-#name,
-#title {
+.user-info>#name,
+.user-info>#title {
     text-align: center;
     box-sizing: border-box;
+}
+
+textarea {
+    border: 0;
+
 }
