@@ -9,8 +9,10 @@ const UserInfo = () => {
     return (
         <div className="user-info">
             <Description />
-            <Education />
+            <h3 id="exp-header">Experience</h3>
             <Experience />
+            <h3 id="edu-header">Education</h3>
+            <Education />
         </div>
     );
 };

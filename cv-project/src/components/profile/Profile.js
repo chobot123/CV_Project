@@ -7,8 +7,11 @@ import Skills from "./profile-components/skills/Skills";
 const Profile = () => {
     return (
         <div className="profile">
+            
             <Username />
+            <h3 id="header">Contact Info</h3>
             <Contact />
+            <h3 id="header">Skills</h3>
             <Skills />
         </div>
     )

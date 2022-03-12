@@ -45,17 +45,25 @@ class Skills extends Component {
         }))
     }
 
+    deleteSkill = (id, e) => {
+        e.preventDefault();
+
+        this.setState({
+            skillList : this.state.skillList.filter((skill) => skill.id !== id)
+        })
+    }
+
     render () {
 
         const {skillList} = this.state;
 
         return (
             <div className="skills">
-                <h3 id="header">Skills</h3>
                 <SkillForm skillList = {skillList}
                            onChange = {this.onChange}
+                           deleteSkill = {this.deleteSkill}
                 />
-                <button onClick={this.onSubmit}>
+                <button onClick={this.onSubmit} id="add">
                     Add Skill+
                 </button>
             </div>

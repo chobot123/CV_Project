@@ -5,3 +5,8 @@
 .userHeader>#title.input {
     font-size: 1.25em;
 }
+
+.username {
+    padding-left: 10px;
+    padding-right: 5px;
+}

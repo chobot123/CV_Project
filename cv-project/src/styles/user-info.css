@@ -6,10 +6,21 @@
     align-items: stretch;
     border: 0.2em solid black;
     min-width: 0;
+    padding-left: 1em;
+    padding-top: 10px;
+    padding-right: 0.5em;
 }
 
-.profile-description {
-    padding: 1em;
+.user-info>#exp-header,
+.user-info>#edu-header {
+    color: rgb(45, 61, 105);
+    border-top: 2px lightgrey solid;
+    border-bottom: 2px rgb(236, 231, 231) solid;
+    padding: 5px;
+}
+
+.user-info *>input:focus {
+    background-color: lightyellow;
 }
 
 .profile-description>* {

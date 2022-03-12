@@ -1,0 +1,97 @@
+.job {
+    display: flex;
+}
+
+li>button {
+    align-self: center;
+}
+
+.experience>ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.experience>ul>li{
+    padding-bottom: 1.2em;
+}
+
+.job-inputs>*,
+.desc-item>input {
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.job-date {
+    font-size: 10px;
+    display: inline-flex;
+    flex-direction: column;
+}
+
+.job-wrapper {
+    display: inline-flex;
+    flex: 1 1;
+}
+
+.job-inputs>#name {
+    font-size: inherit;
+}
+
+.job-wrapper>button,
+.desc-item>button {
+    display: flex;
+    align-self: flex-start;
+    border: transparent;
+    background-color: white;
+    color: red;
+}
+
+.job-wrapper>button:hover,
+.desc-item>button:hover {
+    font-weight: bolder;
+    font-size: larger;
+}
+
+.experience>*{
+    display: flex;
+    align-self: stretch;
+}
+
+#add {
+    align-self: center;
+}
+
+
+#position {
+    font-size: larger;
+    font-weight: bolder;
+}
+
+#location {
+    font-size: small;
+    font-style: italic;
+}
+
+.desc-item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.desc-item>input {
+    font-size: small;
+}
+
+.description-wrapper>li{
+    display: list-item;
+}
+
+#add-desc {
+    border: none;
+    background-color: white;
+    color: blue;
+    font-size: large;
+}
+
+#add-desc:hover {
+    font-size: larger;
+}
+

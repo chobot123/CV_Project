@@ -15,6 +15,9 @@ const SkillForm = (props) => {
                                 type="text"
                                 value={skill.desc}
                             />
+                            <button onClick={(e) => props.deleteSkill(skill.id, e)} id="del">
+                                &#xd7;
+                            </button>
                         </form>
                     </li>
                 )

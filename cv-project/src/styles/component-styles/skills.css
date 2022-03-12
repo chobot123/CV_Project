@@ -3,3 +3,40 @@ ul {
     padding: 0;
     list-style-type: none;
 }
+
+.skills>#add {
+    color: black;
+}
+
+.skills *>input {
+    box-sizing: border-box;
+    width: 100%;
+    font-size: large;
+}
+
+.skills {
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+    padding-right: 5px;
+}
+
+.skills *>li {
+    padding-bottom: 10px;
+}
+
+.skill {
+    display: flex;
+    justify-content: space-between;
+}
+
+.skill>#del{
+    color: red;
+    border: none;
+    
+}
+
+.skill>#del:hover {
+    font-weight: bolder;
+    font-size: large;
+}

@@ -19,10 +19,15 @@
     vertical-align: -moz-middle-with-baseline;
 }
 
+.content-wrapper {
+    background-color: lightgrey;
+}
+
 .content {
     display: flex;
     flex: 1 1 auto;
     width: 800px;
+    background-color: white;
 }
 
 .input,
@@ -37,4 +42,20 @@ textarea {
     font-size: 15px;
     font-style: italic;
     font-weight: lighter;
+}
+
+input:focus {
+    outline: none;
+    background-color: darkblue;
+}
+
+#add {
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#add:hover {
+    font-size: larger;
+    background-color: lightgrey;
 }

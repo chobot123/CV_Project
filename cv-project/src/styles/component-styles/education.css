@@ -1,0 +1,63 @@
+.edu {
+    display: flex;
+    flex: 1;
+}
+
+.edu>:first-child {
+    font-size: 10px;
+}
+
+.education-container {
+    display: inline-flex;
+    flex: 1;
+    padding-bottom: 1.2em;
+}
+.date-container {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+   border: none;
+}
+
+input#school {
+    font-size: larger;
+    font-weight: bolder;
+}
+
+.education>li {
+    list-style: none;
+    display: flex;
+    align-self: stretch;
+}
+
+.edu-wrapper {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+button#trash:hover{
+    font-weight: bolder;
+    font-size: larger;
+}
+
+.education-container>button {
+    align-self: flex-start;
+    border: none;
+    background-color: white;
+}
+
+#degree {
+    font-size: small;
+    font-style: italic;
+}
+
+#trash {
+    display: flex;
+    align-self: flex-start;
+    border: transparent;
+    background-color: white;
+    color: red;
+}

@@ -28,7 +28,6 @@ class Contact extends Component {
         const {info} = this.state;
         return (
             <div className="contact-info">
-                <h3 id="header">Contact Info</h3>
                 <form className="contact-form">
                     <label>
                         Phone Number
@@ -37,7 +36,7 @@ class Contact extends Component {
                         input="number"
                         value={info.phoneNumber}
                         id="phoneNumber"
-                        placeholder="Phone Number"
+                        placeholder="Phone Number..."
                         />
                     </label>
                     <label>
@@ -47,7 +46,7 @@ class Contact extends Component {
                             input="email"
                             value={info.email}
                             id="email"
-                            placeholder="Email"
+                            placeholder="Email..."
                         />
                     </label>
                     <label>
@@ -57,7 +56,7 @@ class Contact extends Component {
                             input="text"
                             value={info.linkedIn}
                             id="linkedIn"
-                            placeholder="Linked In"
+                            placeholder="Linked In..."
                         />
                     </label>
                     <label>
@@ -67,7 +66,7 @@ class Contact extends Component {
                             input="text"
                             value={info.website}
                             id="website"
-                            placeholder="Website"
+                            placeholder="Website..."
                         />
                     </label>
                 </form>
