@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/react-gh-pages/static/css/main.90b42911.css",
-    "main.js": "/react-gh-pages/static/js/main.40020edc.js",
-    "index.html": "/react-gh-pages/index.html",
-    "main.90b42911.css.map": "/react-gh-pages/static/css/main.90b42911.css.map",
-    "main.40020edc.js.map": "/react-gh-pages/static/js/main.40020edc.js.map"
+    "main.css": "/CV-Project/static/css/main.90b42911.css",
+    "main.js": "/CV-Project/static/js/main.40020edc.js",
+    "index.html": "/CV-Project/index.html",
+    "main.90b42911.css.map": "/CV-Project/static/css/main.90b42911.css.map",
+    "main.40020edc.js.map": "/CV-Project/static/js/main.40020edc.js.map"
   },
   "entrypoints": [
     "static/css/main.90b42911.css",
